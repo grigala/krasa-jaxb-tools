@@ -50,16 +50,16 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven-jaxb2-plugin.version>0.8.2</maven-jaxb2-plugin.version>
-        <jaxb.version>2.2.6</jaxb.version>
-        <validation-api.version>2.0.1.Final</validation-api.version>
-        <hibernate-validator.version>4.2.0.Final</hibernate-validator.version>
+        <jaxb.version>3.0.2</jaxb.version>
+        <validation-api.version>3.0.1</validation-api.version>
+        <hibernate-validator.version>7.0.1.Final</hibernate-validator.version>
         <jaxb-api.version>2.2</jaxb-api.version>
         <maven-source-plugin.version>2.2</maven-source-plugin.version>
         <junit.version>4.10</junit.version>
         <maven-compiler-plugin.version>2.5.1</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>2.14.1</maven-surefire-plugin.version>
         <javax-persistence.version>2.1.0</javax-persistence.version>
-        <cxf.version>2.2.3</cxf.version>
+        <cxf.version>3.5.0</cxf.version>
     </properties>
 
     <build>
@@ -84,8 +84,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -113,8 +113,8 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
             <version>${validation-api.version}</version>
         </dependency>
         <dependency>
